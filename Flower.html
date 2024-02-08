@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prettier Petals🌺</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(240, 228, 122) 11.2%,
+          rgb(253, 145, 212) 54.5%,
+          rgb(176, 222, 234) 99.6%
+        );
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid rgb(177, 34, 163);
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 48%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: pink;
+        color: #7d51e8;
+        font-size: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+
+        clip-path: polygon(75% 0%, 96% 50%, 75% 100%, 0 100%, 14% 51%, 0 0);
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        background: url(https://gradients.shecodes.io/gradients/792);
+      }
+
+      .learn-more {
+        color: #7d51e8;
+        text-decoration: none;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+        left: 65%;
+        position: absolute;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: right;
+        position: relative;
+        bottom: 0;
+
+        margin: 10px;
+      }
+
+      /* Additional Styles for Navigation Bar */
+      nav {
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav__logo a {
+        color: #7d51e8;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.3s;
+      }
+
+      .nav__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .nav__links li {
+        margin-right: 20px;
+      }
+
+      .nav__links a {
+        text-decoration: underline;
+        color: #c84b98;
+        font-weight: bold;
+      }
+
+      .container {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 1rem;
+        min-height: calc(100vh - 100px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+      }
+
+      .content__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .content__container h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3.5rem;
+        color: var(--primary-color-dark);
+        margin-bottom: 1rem;
+      }
+
+      .heading__1 {
+        font-weight: 700;
+      }
+
+      .heading__2 {
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+
+      .content__container p {
+        font-size: 1rem;
+        color: var(--text-color);
+        margin-bottom: 2rem;
+      }
+
+      .image__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        place-content: center;
+      }
+
+      .image__container img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        border-radius: 10px;
+      }
+
+      .image__container img:nth-child(1) {
+        transform: translateY(70px);
+      }
+
+      .image__container img:nth-child(2) {
+        transform: translateY(-70px);
+      }
+
+      .image__content {
+        position: absolute;
+        width: 100%;
+        max-width: 310px;
+        left: 65%;
+        top: 50%;
+        bottom: 2%;
+        transform: translate(-35%, 50%);
+        background: linear-gradient(
+          to right,
+          var(--primary-color),
+          var(--primary-color-dark)
+        );
+        color: var(--white);
+        padding: 1rem 2rem;
+        border-radius: 10px;
+      }
+
+      .image__content p {
+        margin-bottom: 0.5rem;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#">✔PRETTIER PETALS🌺</a></div>
+      <ul class="nav__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#query">Query</a></li>
+        <li><a href="#Blog">Blog</a></li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <div class="content__container">
+        <h1>
+          Petals are<br />
+          <span class="heading__1">a Coder's</span>
+          <span class="heading__2">Best Friend!</span>
+        </h1>
+        <p>
+          Prettier Petals is a free, open-source, and MIT-licensed JavaScript
+          formatter. It formats your code so that it's easier to read and write.
+          Unlock your full potential of coding with confidence that's just a
+          click away!
+        </p>
+      </div>
+      <button class="press-button">✔PRETTIER</button>
+      <div class="image__container">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/144/original/petals.html.jpeg?1706733382"
+          alt="header"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/677/original/It's_a_beautiful_world!.jpeg?1707042642"
+          alt="header"
+        />
+        <div class="image__content">
+          <p>
+            Petals are modified leaves that surround the reproductive parts of
+            flowers. They are often brightly colored or unusually shaped to
+            attract pollinators. All of the petals of a flower are collectively
+            known as the corolla.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <a
+      href="https://en.wikipedia.org/wiki/Petal"
+      target="_blank"
+      class="learn-more"
+    >
+      Learn more on Wikipedia
+    </a>
+
+    <p class="footer">Coded by Nyasha Ruwo☺</p>
+
+    <script>
+      let pressButton = document.querySelector(".press-button");
+      pressButton.addEventListener("click", showPrompt);
+
+      function showPrompt() {
+        let name = prompt("What is your name?");
+        let emoji = prompt("How are you feeling today?");
+        let email = prompt("Please enter your email address?");
+
+        if (name !== null && emoji !== null) {
+          alert(
+            "A flower a day keeps the bugs away, Happy coding " +
+              name +
+              " " +
+              emoji +
+              "we'll assess your code very soon!"
+          );
+        } else
+          alert(
+            "A flower a day keeps the bugs away, Happy coding we'll assess your code very soon!"
+          );
+      }
+    </script>
+  </body>
+</html>
