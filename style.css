@@ -1,0 +1,98 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url("background.jpg");
+  color: white;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+header {
+  background-color: #8971d0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+.slideshow-container {
+  display: flex;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.sections {
+  display: flex;
+  transition: transform 3s ease-in-out;
+}
+
+section {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section img {
+  max-width: 100%;
+}
+
+.skills,
+.projects,
+.contact {
+  margin-top: 20px;
+}
+
+.projects img {
+  max-width: 100%;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #8971d0;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.fade {
+  animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.img1 {
+  border-radius: 50%;
+}
+
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-bottom: 70px; /* Add margin to the bottom to move the image up */
+}
