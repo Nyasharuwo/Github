@@ -1,27 +1,22 @@
-body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+
+  
+
+ 
+  
+ body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  background-image: url("background.jpg");
-  color: white;
+  background: linear-gradient(
+    109.6deg,
+    rgb(240, 228, 122) 11.2%,
+    rgb(253, 145, 212) 54.5%,
+    rgb(176, 222, 234) 99.6%
+  );
+
+  color: black;
   overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-header {
-  background-color: #8971d0;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-header p {
-  font-size: 18px;
 }
 
 .slideshow-container {
@@ -47,8 +42,7 @@ section {
 section img {
   max-width: 100%;
 }
-
-.skills,
+ss .skills,
 .projects,
 .contact {
   margin-top: 20px;
@@ -87,6 +81,8 @@ footer {
 }
 .img1 {
   border-radius: 50%;
+  border-color: #8971d0;
+  border: 10px solid #ff1493;
 }
 
 .img2 {
@@ -94,5 +90,65 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 400px;
-  margin-bottom: 70px; /* Add margin to the bottom to move the image up */
+  margin-top: 70px;
+  /* Add margin to the bottom to move the image up */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #ff69b4; /* Pink background color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 10px; /* Border radius */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline for links inside buttons */
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker pink color on hover */
+}
+
+button a {
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
+
+.projects {
+  margin: 0 auto;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+strong {
+  color: #ff1493;
 }
